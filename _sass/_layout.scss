@@ -1,0 +1,561 @@
+
+body{
+  margin: 0px;
+  padding-top: 72px;
+  a{
+    text-decoration: none;
+    color: #4a4a4a;
+    font-family: 'quicksandRegular';
+  }
+ #submit-form{
+   a{
+     color: white;
+     font-family: 'quicksandRegular';
+   }
+ }
+#errorMsg1{
+  color: red !important;
+  font-style: normal !important;
+  font-family: 'robotoRegular';
+
+}
+
+  .groomelogo1{
+    width: 100px;
+    margin-bottom: 10px;
+  }
+.success{
+  h1{
+    text-align: center !important;
+    padding: 10px !important;
+    font-size: 15px !important;
+  }
+}
+.x1{
+  color: #fbf9f9;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+  header{
+    padding: 0px 16px 0px 13px;
+    height: 72px;
+    border-bottom: 1px solid #f2f2f2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    .groome-home{
+      font-size: 32px;
+    }
+    .groomelogo{
+      width: 100px;
+margin-top: 20px;
+          }
+    .groome-expertise {
+      padding-right: 5px;
+      border-right: 1px solid #95989a;
+      font-size: 16px;
+      color: #4a4a4a;
+    font-family: 'quicksandRegular';
+    }
+    .groome-product {
+      margin-left: 5px;
+      font-size: 16px;
+      color: #4a4a4a;
+      font-family: 'quicksandRegular';
+    }  
+  }
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+  footer{
+    padding: 22px 0px 0px;
+    border-top:1px solid #f2f2f2;
+    .row{
+      width: 286px;
+      margin: 0px auto;
+      .footer__image{
+        width: 100%;
+        height: 220px;
+        background-image: url("../assets/images/group-4.svg");
+        background-repeat: no-repeat;
+        background-size: 25em;
+        background-position: 0px 0px;
+      }
+      h1{
+        font-size: 28px;
+        text-align: left;
+        color: #4a4a4a;
+        margin: 16px 0px;
+        font-weight: 400;
+      }
+      h2{
+        font-size: 18px;
+        text-align: left;
+        color: #4a4a4a;
+        font-weight: 400;
+        margin: 0px;
+      }
+      p{
+        font-size: 16px;
+        font-family: 'quicksandRegular';
+        font-weight: 600;
+        color: #4a4a4a;
+        margin: 16px 0px 22px;
+        a{
+          color: #eb6751;
+          cursor: pointer;
+        }
+        
+      }
+    }
+  }
+  @media screen and (min-width:320px){ 
+  #popup1, #popup4{
+      position: fixed;
+      display: none;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      bottom: 0;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      .modal{
+        position: relative;
+        width: 293px;
+        height: 172px;
+        border-radius: 5px;
+        background-color: #e0e0e0;
+    }
+    .x1{
+    margin-top: 16px;
+    margin-left: 15px;
+}
+  .close1 {
+    display: none;
+  }
+    h1 {
+      font-family: 'quicksandRegular';
+      font-size: 24px;
+      text-align: left;
+      color: #1fadc5;
+      margin: 60px 0px 0px;
+      text-align: center;
+      font-weight: normal;
+ }
+     h2 {
+     font-family: 'quicksandRegular';
+     font-size: 16px;
+     text-align: left;
+     color:rgba(60, 60, 60, 0.39);
+     margin: 0;
+     text-align: center;
+     font-weight: normal;
+     }
+  .close-button {
+      position: absolute;
+      right: 0px;
+      top: 9px;
+      border-top-right-radius: 31px;
+      border-bottom-right-radius: 31px;
+      width: 49px;
+      height: 46px;
+      cursor: pointer;
+  }
+    }
+   
+  
+    #popup, #popup2{
+      position: fixed;
+      display: none;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      bottom: 0;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      .modal{
+        position: relative;
+        width: 310px;
+        border-radius: 5px;
+        background-color: #e0e0e0;
+        top:35px;
+    }
+  .row {
+    width: 270px;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+  .close-button {
+      position: absolute;
+      right: 0px;
+      top: 9px;
+      border-top-right-radius: 31px;
+      border-bottom-right-radius: 31px;
+      width: 49px;
+      height: 46px;
+      cursor: pointer;
+  }
+.close1 {
+    display: none;
+  }
+h1 {
+     font-family: 'quicksandRegular';
+     font-size: 20px;
+     text-align: left;
+     color: #1fadc5;
+     margin: 0;
+     padding:0px 0px;
+     width: 220px;
+}
+    h2 {
+    font-family: 'quicksandRegular';
+    font-size: 16px;
+    text-align: left;
+    color: #4a4a4a ;
+    margin: 0;
+    padding: 16px 41px 0px 0px;
+    }
+      p {
+      font-family: 'robotoRegular';
+      font-size: 14px;
+      text-align: left;
+      color: #4a4a4a ;
+      padding-bottom:0px;
+      margin: 10px 0px;
+      }
+      .x {
+      color:#4a4a4a ;
+      font-size: 21px;
+      text-align: center
+      }
+      label {
+      color:#fd7070;
+      }
+      input {
+      width:266px;
+      background-color: #9b9b9b ;
+      font-size: 14px;
+      border: 0;
+      outline: 0;
+      margin: 0;
+      background: transparent;
+      border-bottom: 1px solid #9b9b9b ;
+      font-family: 'robotoRegular';
+      color: #4a4a4a;
+      padding: 0px 0px 11px;
+      margin-bottom: 10px;
+      }
+      button {
+      width: 216px;
+      height: 40px;
+      border-radius: 2px;
+      font-family: 'robotoRegular';
+      font-size: 16px;
+      text-align: center;
+      color: #f2f2f2 ;
+      background-color: #f79a3d ;
+      margin-top:16px;
+      border: none;
+      cursor: pointer;
+    }
+        span {
+        font-size: 14px;
+        text-align: left;
+        color: #1fadc5 ;
+        padding-left: 10px;
+        font-family: 'robotoRegular';
+        }
+        .phone {
+          padding: 13px 0px 0px 0px;
+        }
+        }
+        }
+  @media screen and (min-width:768px){ 
+    .groome-home{
+      padding-left: 39px;
+ }
+ .groome-product{
+   padding-right: 27px;
+ }
+    footer{
+      padding: 24px 0px 0px;
+      .row{
+        width: 710px;
+        margin-left:0 auto;
+        .footer__image{
+          background-position: 52px 0px;
+          background-position: 10em;
+        }
+        h1{
+          margin-top:30px;
+        }
+        h2{
+          font-size: 18px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+    body{
+      header{
+        .groome-expertise {
+          font-size: 16px;
+          padding-right: 16px;
+        }
+        .groome-product {
+          font-size: 16px;
+          padding-left: 16px;
+        } 
+      }
+    }
+    #popup1, #popup4{
+      .modal{
+        width:460px;
+        height: 245px;
+    }
+    h1 {
+  font-family: 'quicksandRegular';
+  font-size: 24px;
+  margin: 94px 0px 10px;
+  text-align: center;
+    }
+h2 {
+  font-family: 'quicksandRegular';
+  font-size: 16px;
+  color: rgba(60, 60, 60, 0.39);
+  margin-bottom: 93px;
+}
+
+.close1 {
+    display: block;
+  }
+  .close2 {
+    display: none;
+  }
+.close-button {
+      right: -49px;
+      top: 10px;
+      background-color: #000000;
+    }
+    }
+   
+    #popup, #popup2{
+
+    .modal{
+      width: 570px;
+  }
+    .row {
+      width: 433px;
+      margin: 0 auto;
+  }
+    .close-button {
+      right: -49px;
+      top: 10px;
+      background-color: #000000;
+    }
+    .close1 {
+    display: block;
+  }
+  .close2 {
+    display: none;
+  }
+  h1 {
+    padding-top: 20px;
+    width: 446px;
+    color: #1fadc5;
+    font-size: 24px;
+  }
+    h2 {
+        font-size: 16px;
+        margin: 0;
+        width: 363px;
+        padding-top: 11px;
+    }
+  .x {
+    margin: 17px 15px 0px;
+    }
+        p {
+        font-size: 14px;
+        padding: 0px;
+        margin: 20px 0px 5px 0px;
+        }
+        input {
+          width: 433px;
+          padding: 0px 0px 11px;
+        }
+        button {
+        width: 216px;
+        height: 40px;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 17px;
+        margin-left: 111px;
+        border: none;
+        }
+        span {
+        padding-left: 10px;
+        }
+        .phone {
+          padding: 29px 0px 22px 0px;
+        }
+        }
+  }
+  @media screen and (min-width:1025px){ 
+    .groome-home{
+     padding-left: 39px;
+}
+.groomelogo1{
+  margin-top: 45px;
+}
+.groome-product{
+  padding-right: 34px;
+}
+body{
+  header{
+    .groome-expertise {
+      font-size: 16px;
+      padding-right: 32px;
+    }
+    .groome-product {
+      font-size: 16px;
+      padding-left: 33px;
+    } 
+  }
+}
+    footer{
+      padding: 48px 0px 0px;
+      .row{
+        width: 925px;
+        .footer__image{
+         background-position: 0px 10px;
+         background-size: 25em;
+        }
+        h1{
+          margin-top: 10px;
+        }
+        h2{
+          font-size: 16px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+
+    #popup1,#popup4{
+      .modal{
+        width:570px;
+        height: 278px;
+    }
+    h1 {
+  margin: 110px 0px 10px;
+  text-align: center;
+    }
+h2 {
+  margin-bottom: 110px;
+}
+
+.close-button {
+      right: -49px;
+      top: 10px;
+      background-color: #000000;
+    }
+    }
+    .groome-expertise {
+      font-size: 16px;
+    }
+    .groome-product {
+      font-size: 16px;
+    } 
+  }
+  @media screen and (min-width:1367px){ 
+    .groome-home{
+     padding-left: 39px;
+}
+.groome-product{
+  padding-right: 34px;
+}
+    footer{
+      padding: 48px 0px 0px;
+      .row{
+        width:1232px;
+        margin-left: 0 auto;
+       
+        h1{
+          margin-top: 10px;
+          font-size: 36px;
+          text-align: left;
+          color: #2faaba;
+        }
+        h2{
+          font-size: 16px;
+          color: #95989a;
+        }
+        a{
+          color: #95989a;
+        }
+      }
+    }
+    #popup1,#popup4{
+      .modal{
+        width:570px;
+        height: 278px;
+    }
+    h1 {
+ 
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1fadc5;
+  margin: 110px 0px 10px;
+  text-align: center;
+    }
+h2 {
+ 
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(60, 60, 60, 0.39);
+}
+    }
+    #popup, #popup2{
+      .modal{
+        width:715px;
+    }
+      .row {
+        width: 446px;
+        margin: 0 auto;
+    }
+      h1{
+        font-size: 32px;
+      }
+      h2{
+        font-size: 24px;
+        width: 433px;
+      }
+      button{
+        margin-top: 29px;
+      }
+      .phone {
+        padding: 43px 0px 32px 0px;
+    }
+    }
+  }

@@ -1,0 +1,772 @@
+
+.wrapper {  
+    background:#f2f2f2;
+}
+.image-container img.active {
+    z-index:2;
+}
+@media screen and (min-width:320px){ 
+    svg{
+        padding: 0px 0px 49px 0px;
+        width: 209px;
+        height: 393px;
+        margin: 0 auto;
+      }
+    svg.main__img{
+        width: 210px;
+        height: 390px;
+    }
+    .groome__homepage{
+        .row{
+            width: 286px;
+            margin: 0px auto;
+            padding: 30px 0px 25px;
+        }
+        button{
+            font-size: 14px;
+            text-align: center;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 4px;
+            background-color: #f79a3d;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+        .homepage__hire{
+            &__text{
+                padding: 0px;
+                h1{
+                    font-family: 'quicksandRegular';
+                    color:#f79a3d;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 1.36;
+                    text-align: center;
+                    margin: 4px 0px;
+                    width: 283px;
+                    margin: 0 auto;
+                }
+                p{
+                    font-family: 'quicksandLight';
+                    font-size: 12px;
+                    font-weight: 100;
+                    line-height: 1.39;
+                    text-align: center;
+                    color: #01363c;
+                    width: 201px;
+                    margin: 8px auto 30px;
+                }
+            }
+            &__image{
+                text-align: center;
+                img{
+                    width: 209px;
+                    height: 393px;
+                }
+            }
+        }
+        .homepage__analytics{
+     
+            background-color: #f3f3f3;
+            &__talent{
+                padding: 0px;
+                &--icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 30px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &__da{
+                padding: 0px;
+                margin-bottom: 18px;
+            }
+            h1{
+                font-size:24px;
+                text-align: center;
+                color: #2faaba;
+                margin: 0px;
+                font-weight: 400;
+                font-family: 'quicksandRegular';
+            }
+            h4{
+                font-size:24px;
+                text-align: center;
+                color: #2faaba;
+            }
+            p{
+                font-size: 14px;
+                line-height: 1.44;
+                text-align: left;
+                color: #4a4a4a;
+                margin: 16px 0px 0px;
+                font-weight: 400;
+                font-family: 'robotoRegular;'
+            }
+            &__plus{
+                width: 300px;
+                padding: 6px 148px;
+                h1{
+                    text-align: center;
+                    margin: 15px 0px;
+                }
+            }
+            &__equal{
+                display: none;
+            }
+        }
+        .homepage__senario{
+            &__image{
+                width: 100%;
+                height: 300px;
+                background-image: url("../assets/images/homepage/Image.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                margin: 17px 0px 3px 0px;
+            }
+            &__text{
+                padding:54px 0px 0px;
+                .row{
+                    padding: 0px;
+                    div{
+                        padding: 0px;
+                    }
+                }
+                h1{
+                    font-size: 24px;
+                    text-align: left;
+                    color: #2faaba;
+                    font-weight: 400;
+                    margin: 0px;
+                    font-family: 'quicksandRegular';
+                }
+                h2{
+                    font-size: 16px;
+                    font-family: 'robotoBold';
+                    font-weight: bold;
+                    text-align: left;
+                    font-weight: 600;
+                    color: #4a4a4a;
+                    margin: 16px 0px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 1.5;
+                    text-align: left;
+                    color: #95989a;
+                    font-weight: 400;
+                    margin: 0px;
+                    font-family: 'robotoRegular';
+                }
+            }
+        }
+        .homepage__offering{
+            width: 100% !important;
+            background-color:#f3f3f3;
+            &__image{
+                width: 100%;
+                height: 205px;
+                background-image: url("../assets/images/homepage/people.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 50% 50%;
+            }
+            &__text{
+                &__inner{
+                    width: 286px;
+                    margin: 0 auto;
+                    h2{
+                        font-size: 16px;
+                        text-align: left;
+                        color: #4a4a4a;
+                        font-weight: 400;
+                        margin: 12px 0px 16px 0px;
+                        font-family: 'robotoRegular';
+                    }
+                    h1{
+                        font-size: 28px;
+                        font-weight: 500;
+                        text-align: left;
+                        color: #4a4a4a;
+                        margin: 0px;
+                        font-family: 'quicksandRegular';
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.5;
+                        text-align: left;
+                        color: #4a4a4a;
+                        margin: 16px 0px;
+                        font-family: 'robotoRegular';
+
+                    }
+                }    
+            }
+        }
+        .homepage__product{
+            &__image{
+                width: 100%;
+                height: 260px;
+                background-image: url("../assets/images/homepage/product-mock@3x.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: 4px 0px 34px 0px;
+            }
+            &__text{
+                h2{
+                    font-size: 16px;
+                    text-align: left;
+                    color: #4a4a4a;
+                    font-weight: 400;
+                    margin: 11px 0px 16px 0px;
+                    font-family: 'robotoBold';
+                }
+                h1{
+                    font-size: 28px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #4a4a4a;
+                    margin: 0px;
+                    font-family: 'quicksandRegular';
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 1.5;
+                    text-align: left;
+                    color: #4a4a4a;
+                    margin: 16px 0px;
+                    font-family: 'robotoRegular';
+                }
+                .comming-soon{
+                    font-size: 14px;
+                    text-align: center;
+                    color: #37b8ae;
+                    padding: 5px 10px;
+                    background-color: rgba(55, 184, 174, 0.3);
+                    cursor: default;
+                    font-family: 'robotoRegular';
+                }
+            }
+        }
+        .homepage__companies{
+            background-color: #2faaba;
+            height: 301px;
+            h1{
+                font-size:36px;
+                font-weight: 500;
+                text-align: left;
+                color: #ffffff;
+                margin: 6px 0 50px;
+                width: 100%;
+                font-family: 'quicksandRegular';
+            }
+            &__image{
+                padding-bottom: 22px;
+                &--1{
+                    width: 124px;
+                    height: 16px;
+                }
+                &--2{
+                    width: 115px;
+                    height: 37px;
+                }
+                &--3{
+                    width: 90px;
+                    height: 18px;
+                }
+                &--4{
+                    width: 108px;
+                    height: 39px;
+                }
+            }
+            
+        }
+    }
+    }
+    @media screen and (min-width:768px){ 
+        svg{
+            padding: 0px 50px 50px 50px;
+            width: 414px;
+            height: 781px;
+            margin: 0 auto;
+          }
+        .groome__homepage{
+            .row{
+                width: 710px;
+            }
+            .homepage__hire{
+                &__text{
+                    h1{
+                        font-size: 28px;
+                        width: 416px;
+                        margin: 18px auto;
+                    }
+                    p{
+                    font-size: 16px;
+                    width: 244px;
+                    margin: 16px auto 0px;
+
+                    }
+                }
+                &__image{
+                    img{
+                        width: 414px;
+                        height: 781px;
+                    }
+                }
+            }
+            .homepage__analytics{
+                &__talent{
+                    &--icon{
+                        img{
+                          margin-top:15px;
+                          margin-left: 25px;
+                        }
+                    }
+                }
+                p{
+                    margin: 30px 0px 0px;
+                    font-size: 14px;
+                }
+                 h1 {
+                    font-size: 24px;
+                    margin-top: 8px;
+                    text-align: left;
+                    display: flex;
+                    height: 78px;
+                    align-items: center;
+                 }
+                 h4{
+                     margin-left: 10px;
+                 }
+                &__plus{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 0px;
+                    padding: 0px;
+                    h1{
+                        text-align: center;
+                        margin: 15px 0px;
+                    }
+                }
+            }
+            .homepage__senario{
+                &__image{
+                    height: 385px;
+                    margin-top: 16px;
+                }
+                &__text{
+                    padding: 30px 0px 34px;
+                    .row{
+                        div{
+                            &:nth-child(odd){
+                                padding-right: 20px;
+                            }
+                        }
+                    }
+                    h1{
+                        font-size: 28px;
+                    }
+                    h2{
+                        margin: 25px 0px 16px;
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .homepage__offering{
+                padding-bottom: 0px;
+                height: 290px;
+                &__image{
+                    height: 250px;
+                    background-position: 0px;
+                    align-self: flex-end;
+                }
+                &__text{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    &__inner{
+                        width: 342px;
+                        margin: 0px;
+                        h2{
+                            margin: 0px 0px 8px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                        h1{
+                            font-size:32px;
+                        }
+                    }    
+                }
+            }
+            .homepage__product{
+                &__image{
+                    background-position: right;
+                    margin-top: 34px;
+                }
+                &__text{
+                    padding-left: 50px;
+                    h2{
+                        margin: 11px 0px 8px;
+                    }
+                    h1{
+                        font-size: 32px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    .comming-soon {
+                     margin-top: 34px;
+                    }
+                }
+            }
+            .homepage__companies{
+                height: 335px;
+                h1{
+                    margin: 31px 0 30px;
+                }
+                &__image{
+                    text-align: center;
+                    &--1{
+                        width: 188px;
+                        height: 24px;
+                    }
+                    &--2{
+                        width: 198px;
+                        height: 64px;
+                    }
+                    &--3{
+                        width: 122px;
+                        height: 24px;
+                    }
+                    &--4{
+                        width: 175px;
+                        height: 64px;
+                    }
+                }
+            }
+        }    
+    }
+    @media screen and (min-width:1025px){ 
+        svg{
+            padding: 1px 45px 221px 71px;
+            margin: 0px;
+            margin-left: 122px;
+            width: 394px;
+            height: 730px;
+          }
+        .image-container img.active {
+            z-index:2;
+        }
+        .container1 {
+            position: absolute;
+        }
+        .groome__homepage{
+            .row{
+                width: 928px;
+            }
+            button{
+                font-size: 18px;
+            }
+            .homepage__hire{
+                &__text{
+                    height: 387px;
+                    padding-top:100px;
+                    h1{
+                        font-size: 32px;
+                        text-align: left;
+                       margin: 0px 10px;
+                       width: 464px;
+                    }
+                    p{
+                        font-size: 20px;
+                        text-align: left;
+                        width: 350px;
+                        margin: 26px 10px;
+                    }
+                }
+                &__image{
+                    position: relative;
+                    img{
+                        width: 414px;
+                        height: 850px;
+                        position: absolute;
+                        left: 40px; 
+                    }
+                }
+            }
+            .homepage__analytics{
+                &__talent--talentt{
+                    margin-left: 41px;
+                }
+                p{
+                    margin: 30px 0px 27px 0px;
+                    font-size: 16px;
+                    width: 246px;
+                }
+                h1{
+                    font-size: 28px;
+                    height: 165px;
+                    text-align: center;
+                    margin-top: 16px;
+                }
+                h4{
+                    font-size: 32px;
+                    margin-left: 50px;
+                }
+                &__plus{
+                    h1{
+                        font-size: 48px;
+                        margin-top: 27px;
+                        margin-left: 10px;
+                    }
+                }
+                &__equal{
+                    display: flex;
+                    align-items: center;
+                    h4{
+                        margin: 0px;
+                    }
+                }
+            }
+            .homepage__senario{
+                &__image{
+                    margin:60px 0px 84px 0px;
+                    height: 475px;
+                }
+                &__text{
+                    padding: 34px 0px 34px;
+                    .row{
+                        width: 100%;
+                        div{
+                            &:nth-child(even){
+                                padding-right: 20px;
+                            }
+                        }
+                    }
+                    h1{
+                        font-size: 28px;
+                        margin-top:4px;
+                    }
+                    h2{
+                        margin: 33px 0px 16px;
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .homepage__offering{
+                padding-bottom: 0px;
+                height: 370px;
+                &__image{
+                    height: 309px;
+                }
+                &__text{
+                    &__inner{
+                        width: 450px;
+                        margin: 0px;
+                        h2{
+                            margin: 0px 0px 8px;
+                        }
+                        h1{
+                            font-size:36px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }    
+                }
+            }
+            .homepage__product{
+                &__image{
+                    height:300px;
+                    margin: 25px 0px 0px;
+                }
+                &__text{
+                    padding-left: 111px;
+                    p{
+                        width: 350px;
+                        font-size:16px;
+                    }
+                    h1{
+                        font-size: 36px;
+                    }
+                    .comming-soon{
+                        margin-top:39px;
+                    }
+                }
+            }
+            .homepage__companies{
+                height: 261px;
+                h1{
+                    font-size: 48px;
+                    margin: 18px 0 30px;
+                }
+            }
+        }    
+    }
+    @media screen and (min-width:1367px){ 
+        svg{
+            padding: 0px 0px 151px 95px;
+            margin: 0px;
+            margin-left: 40px;
+            width: 390px;
+            height: 701px;
+          }
+        .image-container img.active {
+            z-index:2;
+        }
+        .container1 {
+            position: absolute; 
+            margin-left: 100px;
+        }
+        .groome__homepage{
+            .row{
+                width: 1232px;
+            }
+            .homepage__hire{
+                &__text{
+                    h1{
+                        font-size:36px;
+                        text-align: left;
+                        width:510px;
+                        margin-top: 73px;
+                        margin: 0px;
+                    }
+                    p{
+                        font-size:24px;
+                        text-align: left;
+                        width: 448px;
+                        margin-top: 22px;
+                        margin-left: 0px;
+                    }
+                }
+                &__image{
+                    position: relative;
+                    // margin-top: 35px;
+                    img{
+                        width: 473px;
+                        height: 1076px;
+                        position: absolute;
+                        left: 111px;
+                    }
+                }
+            }
+            .homepage__analytics{
+                &__talent--talentt{
+                    margin-left: 41px;
+                }
+                p{
+                    margin: 30px 0px 27px 0px;
+                    font-size: 16px;
+                    width: 246px;
+                }
+                h1{
+                    font-size: 28px;
+                    height:245px;
+                    text-align: center;
+                    margin-top: 16px;
+                }
+                h4{
+                    font-size: 32px;
+                    margin-left: 50px;
+                }
+                &__plus{
+                    h1{
+                        font-size: 48px;
+                        margin-top: 27px;
+                        margin-left: 10px;
+                    }
+                }
+                &__equal{
+                    display: flex;
+                    align-items: center;
+                    h4{
+                        margin: 0px;
+                    }
+                }
+            }
+            .homepage__senario{
+                &__text{
+                    padding: 62px 0px 84px;
+                    .row{
+                        width: 100%;
+                        div{
+                            &:nth-child(even){
+                                padding-right: 20px;
+                            }
+                        }
+                    }
+                    h1{
+                        font-size:36px;
+                    }
+                    h2{
+                        margin: 32px 0px 16px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .homepage__offering{
+                height: 400px;
+                &__image{
+                    height: 350px;
+                }
+                &__text{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    &__inner{
+                        width: 450px;
+                        margin: 0px;
+                        h2{
+                            margin: 0px 0px 8px;
+                        }
+                        h1{
+                            font-size:36px;
+                        }
+                        p{
+                            font-size:16px;
+                        }
+                    }    
+                }
+            }
+            .homepage__product{
+                &__image{
+                    height:330px;
+                    margin: 34px 0px 0px;
+                }
+                &__text{
+                    p{
+                        width: 350px;
+                        font-size: 16px;
+                    }
+                    h1{
+                        font-size: 36px;
+                    }
+                    .comming-soon {
+                        margin-top:97px;
+                    }
+                }
+            }
+            .homepage__companies{
+                height: 355px;
+                h1{
+                    font-size: 48px;
+                    margin: 73px 0 22px;
+                }
+            }
+        }    
+    }
+    

@@ -1,0 +1,133 @@
+<footer>
+    <div class="row">
+        <div class="footer__image col-xs-12 col-sm-12  last-md col-md-7 col-lg-7"></div>
+        <div class="col-xs-12 col-sm-12  col-md-5 col-lg-5">
+          <a  href="/index"><img class="groomelogo1" src="../assets/images/Groome_Logo-02.svg"/></a>
+            <a href="/expertise"><h2>Expertise </a> |  <a  href="/product">  Product</a>  | <a href="#popup" id="open_popup">Contact</a> </h2>
+            <p>Product of <a href="https://www.hashworks.co/" target="_blank"> hashworks.co</a></p>
+        </div>
+    </div>
+    <div id="popup" >
+      <div class="modal">
+         <div class="row">
+            <div class="close-button" id="close_popup">
+              <p class="x">
+                 <img class="close1" src="../assets/images/close-icon .svg"/ alt="Human Recourse close">
+                <img class="close2" src="../assets/images/close-icon1.svg"/ alt="Human Recourse close">
+                </p></div>
+              <h1>LET’S WORK TOGETHER</h1>
+              <br>
+              <form id="contactform" action="" name="contactus">
+                      <div>
+                        <p>Your name <label>*</label></p>
+                        <input type="text" name="name" id="name" placeholder="Name"/>
+                      </div>
+                      <div>
+                        <p>Your Email <label>*</label></p>
+                        <input id="emailVal1"  type="email" name="email" id="email" placeholder="Email"/>
+                      </div>
+                      <div>
+                        <p>Your Company <label>*</label></p>
+                        <input type="text" name="company" id="company" placeholder="Hashworks"/>
+                      </div>
+                      <div>
+                        <button type="submit" id="submit-form"><a href="#popup1" id="open_popup1">Submit</a></button>
+                      </div>
+              </form>
+                <div class="success">
+                  <h1 id="errorMsg1">Please Fill In All Required Fields*</h1>
+                </div>
+              <div class="row phone">
+               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                 <img src="../assets/images/antique.png"/ alt="Hr Solution">
+                 <span>+91 80 64513477</span>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                 <img src="../assets/images/email.png"/ alt="HR SOLUTION">
+                 <span>hello@groome.co</span>
+               </div>
+                </div>
+            </div>
+        </div>
+          </div>
+
+       <div  id="popup1" >
+        <div class="modal">
+            <div id="test">
+            <div class="close-button" id="close_popup1"><p class="x1">
+              <img class="close1" src="../assets/images/close-icon .svg"/>
+                <img class="close2" src="../assets/images/close-icon1.svg"/>
+            </p>
+            </div>
+                  <h1>THANK YOU!</h1>
+                  <h2>We will get back to you soon.</h2>
+            </div>
+        </div>
+       </div>
+
+</footer>
+</body>
+<script src="../assets/js/jquery.serialize-object.min.js"></script>
+<script>
+//validation
+$(document).ready(function() {
+    $("#errorMsg1").hide();
+    var $form = $('form#contactform'),
+        url = 'https://script.google.com/macros/s/AKfycbym0D9ijAOnr5vE91Gmt8IHIHXq-gwYcKU8P8eiLR4PzWp_3QY/exec'
+
+    function isEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (regex.test(email) === !0) {
+            console.log('Valid Email');
+            $("#test").show();
+            $("#popup").css("display", "none");
+            $("#popup1").css("display", "flex");
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject(),
+                success: function() {
+                    $("#contactform")[0].reset();
+                    $("#errorMsg1").hide()
+                }
+            })
+        } else {
+            console.log('Invalid Emial');
+            $("#errorMsg1").show()
+        }
+    }
+    $('#submit-form').on('click', function(e) {
+        if ($('#name').val().length > 0) {
+            if ($('#company').val().length > 0) {
+                var email = $("#emailVal1").val();
+                isEmail(email)
+            } else {
+                console.log('Invalid company');
+                $("#errorMsg1").show()
+            }
+        } else {
+            console.log('Invalid Name');
+            $("#errorMsg1").show()
+        }
+        e.preventDefault()
+    })
+});
+$("#open_popup").click(function() {
+    $("#popup").css("display", "flex")
+});
+$("#close_popup").click(function() {
+    $("#popup").css("display", "none")
+});
+$("#close_popup1").click(function() {
+    $("#popup1").css("display", "none")
+});
+$('body').click(function(e) {
+    if (e.target.style[0] == "display") {
+        $("#popup").css("display", "none")
+    }
+});
+
+    </script>
+
+</html>
